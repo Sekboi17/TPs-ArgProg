@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="arrays.js"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url(https://i.pinimg.com/originals/f7/67/9d/f7679d5d140e3773b75e15dc39f503e6.png);
+            background-size: cover;
+            height: 100%;
+            
+        }
+
+        .boton,
+        .botonGrados {
+            margin: 20px 0;
+            padding: 7px;
+            font-size: larger;
+            text-align: center;
+        }
+
+        .botonInfo {
+            margin: 10px 0;
+        
+
+        }
+
+        .moneda,
+        .grados {
+
+            font-size: 20px;
+        }
+
+        .contenedorPadre,
+        .contenedorMadre,
+        .contenedorEnvio {
+            background-color: #DAE1E0;
+            min-width: 40vw;
+            border-radius: 20px;
+            margin-top: 50px;
+            min-height: 15vh;
+        }
+
+
+        .laConversion,
+        .laConversion2,
+        .elForm {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* aca se puede alinear todo al centro con texte align: center; pero tengo que seguir averiguando
+        como hacerlo a mi manera */
+
+        .laConversion2 {
+            padding-top: 15px;
+        }
+
+        .elForm {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .titulo {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display: flex;
+            justify-content: center;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedorPadre">
+        <div class="titulo">
+            <h1>CONVERTIDOR</h1>
+        </div>
+        <div class="laConversion">
+            <form name="convertidor">
+
+                <label class="moneda" for="dolares">Dolares :</label> <br>
+                <input type="text" name="dolares" id="dolares"><br>
+                <label class="moneda" for="pesos">Pesos :</label> <br>
+                <input type="text" name="pesos" id="pesos"><br>
+
+                <input class="boton" type="submit" value="Convertir" onclick="calcular()">
+
+            </form>
+        </div>
+    </div>
+
+    <div class="contenedorMadre">
+        <div class="laConversion2">
+            <form>
+                <label class="grados" for="celcius">Grados Celsius :</label> <br>
+                <input type="text" name="celcius" id="celcius"><br>
+                <label class="grados" for="farenheit">Grados Farenheit :</label> <br>
+                <input type="text" name="farenheit" id="farenheit"><br>
+
+                <input class="botonGrados" type="button" value="Convertir" onclick="convertir()">
+            </form>
+
+        </div>
+
+    </div>
+
+    <div class="contenedorEnvio">
+        <div class="elForm">
+            <form class="formEnvio">
+                <label for="nombre">Nombre del cliente:</label> <br>
+                <input type="text" name="nombre" id="nombre"> <br> <br>
+
+                <label for="material">Material de la caja:</label> <br>
+                <select name="material" id="material">
+                    <option value="madera">Madera</option>
+                    <option value="plastico">Plastico</option>
+                    <option value="acero">Acero</option>
+                </select> <br> <br>
+
+                <label for="tamaño">Seleccione el tamaño de la caja:</label> <br>
+                <input type="radio" name="tamaño" id="tamaño1" value="grande">Grande <br>
+                <input type="radio" name="tamaño" id="tamaño2" value="mediano">Mediano <br>
+                <input type="radio" name="tamaño" id="tamaño3" value="pequeño">Pequeño <br> <br>
+
+                <label for="comentarios">Comenterios:</label> <br>
+                <textarea name="comentarios" id="comentarios" cols="25" rows="3"></textarea> <br>
+
+                <div class="botonInfo">
+                    <input type="button" value="Enviar" onclick="enviarInformacion()">
+                </div>
+
+                <textarea class="caracteristicas" name="caracteristicas" id="caracteristicas" cols="25"
+                    rows="3"></textarea>
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>
