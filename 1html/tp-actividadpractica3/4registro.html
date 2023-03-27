@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receta online</title>
+</head>
+
+<body>
+    <header style="background-color: gray;">
+        <nav style="text-align: left;">
+            <a href="1home.html" target="_self" style="background-color: orange;"> Home</a>
+            <a href="2receta.html" target="_self" style="background-color: orange;"> Receta</a>
+            <a href="3contacto.html" target="_self" style="background-color: orange;"> Contacto</a>
+            <a href="4registro.html" target="_self" style="background-color: orange;">Registro</a>
+            <a href="5sucursales.html" target="_self" style="background-color: orange;">Sucursales</a>
+        </nav>
+        <h1 style="text-align: center; color: blue;">RECETA DE PIQUE-MACHO POR JOSE</h1>
+    </header>
+
+    <main>
+        <h2><ins>Formulario de registro</ins></h2>
+        <form action="show_data.html" target="_self">
+            <fieldset>
+                <legend>Datos</legend>
+                <label for="fname">Nombre:</label>
+                <input type="text" name="Nombre" id="fname" placeholder="Introducir nombre">
+                <br><br>
+                <label for="lname">Apellido:</label>
+                <input type="text" name="Apellido" id="lname" placeholder="Intoducir apellido">
+                <br><br>
+                <label for="age">Edad:</label>
+                <input type="number" name="Edad" id="age" max="99" min="1">
+                <br><br>
+                <label for="date">Fecha de nacimiento:</label>
+                <input type="date" name="Fecha-de-nacimiento" id="date" min="1999-01-01" max="2021-09-20">
+                <br><br>
+                <label>Genero:</label><br>
+                <input type="radio" name="Genero" id="male" value="Hombre">Hombre
+                <input type="radio" name="Genero" id="female" value="Mujer">Mujer
+                <input type="radio" name="Genero" id="nonbinary" value="Nobinario">Nobinario
+                <input type="radio" name="Genero" id="no">Prefiero no decirlo
+                <br><br>
+                <label>Como nos conociste:</label><br>
+                <input type="checkbox" name="Como-nos-conociste" id="socialnetwork" value="Red social"> Red social
+                <input type="checkbox" name="Como-nos-conociste" id="friend" value="Amigos/familiares">
+                Amigos/familiares
+                <input type="checkbox" name="Como-nos-conociste" id="email" value="Email"> Email
+                <input type="checkbox" name="Como-nos-conociste" id="tv" value="Television"> Television
+            </fieldset>
+
+            <fieldset>
+                <legend>Direccion</legend>
+                <label for="street">Calle:</label>
+                <input type="text" name="Calle" id="street">
+                <br><br>
+                <label for="number">Altura</label>
+                <input type="number" name="Altura" id="number" min="1" max="9999">
+                <br><br>
+                <label for="city">Elija su barrio</label>
+                <select name="Localidad" id="city">
+                    <option value="Lugano">Lugano</option>
+                    <option value="Caballito">Caballito</option>
+                    <option value="Belgrano">Belgrano</option>
+                    <option value="Liniers">Liniers</option>
+                    <option value="Mataderos">Mataderos</option>
+                </select>
+                <br><br>
+                <label for="zipcode">Codigo postal:</label>
+                <input type="number" name="Codigo-postal" id="zipcode" min="1000" max="9999">
+            </fieldset>
+<br>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+<br>
+    <footer style="background-color: gray; text-align: center;">
+        Derechos reservados a Jose's Company
+    </footer>
+</body>
+
+</html>

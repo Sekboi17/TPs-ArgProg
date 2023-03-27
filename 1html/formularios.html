@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <h1>Formularios</h1>
+    <form action="show_data.html" target="_self">
+        <label for="fname">Nombre</label>
+        <input type="text" id="fname" name="Nombre" placeholder="Intoduzca su nombre aqui" required> <br>
+        <label for="lname">Apellido</label>
+        <input type="text" name="Apellido" id="lname" placeholder="Introduzca su apellido aqui">
+
+        <!--Formulario pero con password, osea no se ve lo que escribimos por seguridad-->
+
+        <h3><ins>Inicio de sesion</ins></h3>
+        <label for="username">Usuario</label>
+        <input type="text" name="Usuario" id="username" placeholder="Coloque aqui su nombre de usuario"><br>
+        <label for="pwd">Contraseña</label>
+        <input type="password" name="Password" id="pwd" placeholder="Introduzca su contraseña aqui"><br>
+
+        <!-- Aca no estoy seguro si el for del label y el id de los inputs estan usados correctamente-->
+
+        <h3>Checkbox</h3>
+        <label for="songfav">Canciones favoritas de bts:</label>
+        <input type="checkbox" id="cancion1" name="songfav" value="Idol"> Idol
+        <input type="checkbox" id="cancion2" name="songfav" value="Love Maze"> Love Maze
+        <input type="checkbox" id="cancion3" name="songfav" value="Outro Wings"> Outro Wings
+        <input type="checkbox" id="cancion4" name="songfav" value="Like"> Like
+        <input type="checkbox" id="cancion5" name="songfav" value="Dynamite"> Dynamite
+        <br>
+        <!--Otro tipo de checkbox, pero esta vez usando mas labels y ids-->
+
+        <h3>Las mejores canciones de bts del 2020</h3>
+        <input type="checkbox" id="song1" name="Cancion1" value="Life goes on">
+        <label for="song1">Life goes on</label> <br>
+        <input type="checkbox" id="song2" name="Cancion2" value="On">
+        <label for="song2">On</label> <br>
+        <input type="checkbox" id="song3" name="Cancion3" value="Butter">
+        <label for="song3">Butter</label> <br>
+        <input type="checkbox" id="song4" name="Cancion4" value="Dimple">
+        <label for="song4">Dimple</label> <br>
+
+        <!--Ahora vamos con los input tipo radio que sirvn para elegir solo una opcion,
+        todavia no se para que la profe uso el for del label si en los inputs los ids tenian
+        diferente nombre-->
+
+        <h3>Radio</h3>
+        <input type="radio" name="gender" id="male" value="Hombre">
+        <label for="male">Hombre</label>
+        <input type="radio" name="gender" id="female" value="Mujer">
+        <label for="female">Mujer</label>
+        <input type="radio" name="gender" id="other" value="Otro">
+        <label for="other">Otro</label>
+        <input type="radio" name="gender" id="non-binary" value="No binario">
+        <label for="non-binary">No binario</label>
+
+        <!--Y ahora vamos  poner las areas de texto que se pueden usar para consultas o comentarios-->
+
+        <h3>Area de texto</h3>
+        <label for="txtarea">Comentarios</label>
+        <textarea name="Comentarios" id="txtarea" cols="30" rows="10" placeholder="Deje su comentario aqui"></textarea>
+
+        <!--Ahora hacemos el comando select que nos sirve para darle opciones a nuestro cliente-->
+
+        <h3>Selector</h3>
+        <label for="sonicgames">Elegi el mejor juego de sonic</label><br>
+        <select name="Juegosonic" id="sonicgames">
+            <option value="sonic unleashed">Sonic Unleashed</option>
+            <option value="sonic 2006">Sonic 2006</option>
+            <option value="sonic riders">Sonic Riders</option>
+            <option value="sonic colors">Sonic Colors</option>
+        </select>
+
+        <!--Ahora vamos a usar el fieldset y legend, sirve para agrupar campos de texto de un mismo tipo-->
+
+        <h3>Fieldset y Legend</h3>
+        <fieldset>
+            <legend>Formulario</legend>
+            <p>A continuacion llene los espacios con sus datos. Los datos que ingrese tienen caracter de
+                declaracion jurada.
+            </p>
+            <fieldset>
+                <legend>Datos</legend>
+                <label for="fname">Nombre</label><br>
+                <input type="text" name="Nombre" id="fname" placeholder="Introduzca el nombre aqui"><br>
+                <label for="lname">Apellido</label><br>
+                <input type="text" name="Apellido" id="lname" placeholder="Introduzca el apellido aqui"><br>
+                <label for="age">Edad</label> <br>
+                <input type="number" name="Edad" id="age" placeholder="Introduzca su edad">
+            </fieldset>
+            <fieldset>
+                <legend>Direccion</legend>
+                <label for="number">Altura</label> <br>
+                <input type="number" name="Altura" id="number" placeholder="Ponga su altura"><br>
+
+                <label for="street">Calle</label><br>
+                <input type="text" name="Calle" id="street" placeholder="Ponga la calle"> <br> <br>
+
+                <label for="city">Provincia:</label>
+                <select name="Provincia" id="city">
+                    <option value="Buenos Aires">Buenos Aires</option>
+                    <option value="CABA">CABA</option>
+                    <option value="Cordoba">Cordoba</option>
+                    <option value="Corrientes">Corrientes</option>
+                </select> <br><br>
+
+                <label for="date">Fecha de nacimiento</label>
+                <input type="date" name="fechanacimiento" id="date" ><br><br>
+
+                <label for="datemax-min">Fecha de nacimiento (entre 2010 y 2021)</label>
+                <input type="date" name="fechanacimientovalida" id="datemax-min" max="2021-12-31" min="2010-01-01">
+            </fieldset>
+        </fieldset>
+
+
+
+
+        <br>
+        <input type="submit" value="Enviar">
+
+
+
+
+
+    </form>
+</body>
+
+</html>
