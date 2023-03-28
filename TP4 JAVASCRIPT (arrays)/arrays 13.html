@@ -5,20 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="arrays 13.js"></script>
+    <script src="arrays 13.js" defer></script>
+    <!-- <script src="arrays 13.js"></script> -->
     <title>Document</title>
 </head>
 
 <body>
-    <div>
-        <h2>Juego</h2>
-    </div>
-<div>
-    <form>
-        <label for="game">Introduzca su numero:</label> <br>
-        <input type="text">
+    <h2>Introduzca el numero (tiene 3 intentos):</h2>
+
+    <form id="formJuego">
+        <!-- <label for="number">Introduzca el numero (tiene 3 intentos):</label> <br> -->
+        <input type="number" style="width: 175px;" max="5" min="0" name="juego" id="number"  required 
+            placeholder="Introduzca aqui el numero">
+
+        <input type="submit" value="Intentar" id="botonJugar" >
+        
+        <!-- es necesario que sea un boton de submit para que los maximos y otras restricciones 
+        se apliquen al input, con un simple boton no se puede -->
+
+        <p id="parrafoEstado"></p>
+        <div id="divBtnRestart">
+
+        </div>
     </form>
-</div>
+    <!-- <script src="arrays 13.js"></script> -->
 </body>
 
 </html>
