@@ -1,6 +1,6 @@
 * {
     font-family: 'Nunito', sans-serif;
-    font-size: 10.5px;
+    font-size: 16px;
 }
 
 body {
@@ -36,13 +36,18 @@ body {
     background-image: url(images/img-login.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover
 
     /* background: black; */
 }
+
+.img{
+    
+    height: 70px;
+}
 .title {
     color: #22193F;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 900;
     /* margin-top:12%;
     margin-bottom: 12%; */
@@ -56,11 +61,11 @@ body {
 .icon {
     position: absolute;
     top: 1.04rem;
-    left: 1.5rem;
+    left: 1.8rem;
     font-size: 20px;
     color: #6A2A83;
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 900;
 }
 
  .form-floating label, .form-floating .form-control {
@@ -76,13 +81,13 @@ body {
 
 
 #link {
-    font-size: 12px;
+    font-size: 16px;
     color: #E21982;
     font-weight: bold;
 }
 
 .btn {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 700;
     color: white;
     background-color: #E21982;
