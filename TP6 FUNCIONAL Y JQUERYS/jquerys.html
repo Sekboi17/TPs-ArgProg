@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container bg-info-subtle py-4 rounded-5 mt-3">
+        <div class="container d-flex flex-column align-items-center">
+            <h3 class=" text-start w-100">Copiado de texto</h3>
+            <input type="text" id="input" class="mt-2 w-100">
+            <div class="mt-4 p-1 bg-dark-subtle w-100">
+                <p class="text-dark" id="contenido"></p>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+            integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+        <script src="jquerys.js"></script>
+
+
+        <div class="container mt-4 bg-body-secondary p-4 rounded-5">
+            <form id="formulario">
+                <input class="form-control" type="text" placeholder="Ingrese su nombre aqui" name="nombre" id="nombre">
+                <button class="btn btn-success mt-3" type="submit"> Enviar </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- EJERCICIO TP -->
+
+    <div class="container mt-4">
+        <h2>TP JQUERY</h2>
+
+        <!-- EJERCICIO 10 -->
+        <div>
+            <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, assumenda expedita reprehenderit
+                quasi placeat voluptates adipisci nihil soluta ipsam dolores. Rerum libero error deleniti dolore omnis
+                ducimus nesciunt.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, assumenda expedita reprehenderit ea ab
+                quasi placeat voluptates adipisci nihil soluta ipsam dolores. Rerum libero error deleniti dolore omnis
+                ducimus nesciunt.
+            </p>
+        </div>
+
+        <!-- EJERCICIO 11 -->
+        <div>
+            <table class="table rounded-4" id="tabla">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Primero</th>
+                        <th scope="col">Último</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <!-- EJERCICIO 12 -->
+        <div>
+            <ul id="lista">
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, nostrum </li>
+                <li class="text-danger">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, nostrum</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, nostrum</li>
+                <li class="text-danger">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, nostrum</li>
+            </ul>
+        </div>
+
+        <!-- EJERCICIO 13 -->
+        <div class="row">
+            <div class="col-6">
+                <table class="table rounded-4">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Primero</th>
+                            <th scope="col">Último</th>
+                        </tr>
+                    </thead>
+                    <tbody id="filaColor">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="col-6">
+                <table class="table rounded-4">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Primero</th>
+                            <th scope="col">Último</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- EJERCICIO 14 -->
+        <div class="row">
+            <div class="col-4 noticia1">
+                <h2>Noticia 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+                    deserunt quo expedita ipsa ut fugit recusandae reiciendis provident? </p>
+                <button class="btn btn-primary" id="boton1"> Noticia1</button>
+
+            </div>
+
+            <div class="col-4 noticia2">
+                <h2>Noticia 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+                    deserunt quo expedita ipsa ut fugit recusandae reiciendis provident? </p>
+                <button class="btn btn-primary" id="boton2"> Noticia2</button>
+
+            </div>
+
+            <div class="col-4 noticia3">
+                <h2>Noticia 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+                    deserunt quo expedita ipsa ut fugit recusandae reiciendis provident? </p>
+                <button class="btn btn-primary" id="boton3"> Noticia3</button>
+            </div>
+        </div>
+
+        <!-- EJERCICIO 15 -->
+        <div class="row">
+            <div class="col-6">
+                <table class="table rounded-4">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Primero</th>
+                            <th>Último</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tablaBody">
+                            <th>1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                        </tr>
+                        <tr class="tablaBody">
+                            <th>2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="col-6">
+                <table class="table rounded-4">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Primero</th>
+                            <th>Último</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-success w-25" id="btnCambio">Cambiar</button>
+            </div>
+        </div>
+
+        <!-- EJERCICIO 16 -->
+        <div class="mt-4">
+            
+            <a href="" id="enlace16" target="_blank" class="text-center fs-3">Enlace de prueba</a>
+
+            <div class="mt-2">
+                <button  class="btn btn-outline-danger" id="face">Facebook</button>
+                <button  class="btn btn-outline-danger" id="link">Linkedin</button>
+                <button  class="btn btn-outline-danger" id="you" >Youtube</button>
+            </div>
+            
+        </div>
+    </div>
+
+
+</body>
+
+</html>
